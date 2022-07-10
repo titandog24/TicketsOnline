@@ -1,5 +1,5 @@
 import React from 'react'  
-import { Button, CardMedia, Grid, Typography, Card } from '@mui/material'  
+import { Button, Grid, Typography, Card } from '@mui/material'  
 import { ImagenCartaEncabezado, TitulosYTexto } from '../../utils/Data'  
 
 
@@ -25,15 +25,9 @@ const ContIzq = (tituloPrincipal, tituloSecundario) => {
 const ContDer = (imagen) => {
     return (
         <Grid container item xs={12} md={6}>
-            <Grid item xs={12}>
-                <Card>
-                    <CardMedia
-                        component={'img'}
-                        image={imagen}
-                        alt='Hola mundo'
-                    />
-                </Card>
-            </Grid>
+            <Card>
+                <img src={imagen} style={{minHeight: '100%', maxWidth: '100%'}} alt="Imagen del Encabezado" />
+            </Card>
         </Grid>
     )
 }
@@ -43,7 +37,9 @@ const CartaEncabezado = () => {
     const tituloSecundario = TitulosYTexto().tituloSecundario
     return (
         <Grid
-            container item>
+            container 
+            item
+            marginTop={'15rem'}>
             {
                 ContIzq(tituloPrincipal, tituloSecundario)
             }

@@ -10,11 +10,12 @@ const RenderizarCarta = ({image, texto}) => {
 
 const CartasLista = () => {
     const Data = DatosListaCarta()
-    console.log(Data)  
+
     return (
         <Grid 
         container
         spacing={2}
+        marginTop='8rem'
         >
             {
                 Data.map((datos,index) => {

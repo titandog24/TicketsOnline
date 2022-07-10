@@ -6,7 +6,7 @@ import SegundoContenidoCentral from './SegundoContenidoCentral'
 const RenderCardDual = ({component}) => {
     const [ContenidoIzquierdo, ContenidoDerecho] = component()
     return (
-        <Grid container item >
+        <Grid container item marginTop='8rem'>
             <Grid item xs={12} md={6}>
                 {ContenidoIzquierdo}
             </Grid>

@@ -19,7 +19,7 @@ import Grid from '@mui/material/Grid'
 const pages = ['Empresa', 'Noticias', 'Contactenos']  
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout']  
 const nombreEmpresa = TitulosYTexto().nombreEmpresa
-const AppBars = ({children}) => {
+const AppBars = () => {
 
   const [anchorElNav, setAnchorElNav] = useState(null)  
   const [anchorElUser, setAnchorElUser] = useState(null)  
@@ -153,7 +153,7 @@ const AppBars = ({children}) => {
   return (
     <Grid container justifyContent={'center'}>
       <ThemeProvider theme={darkTheme}>
-        <AppBar color="primary" position='static'>
+        <AppBar color="primary" position='fixed'>
           <Container maxWidth="xl">
             <Toolbar disableGutters>
               {MenuParaMedidaXs(anchorElNav, anchorElUser, setAnchorElNav, setAnchorElUser)}
@@ -192,13 +192,6 @@ const AppBars = ({children}) => {
           </Container>
         </AppBar>
       </ThemeProvider>
-      <Grid item
-        xs={12}
-        sm={11}
-        md={10}
-        lg={8}>
-            {children}
-        </Grid>
     </Grid>
   )  
 }

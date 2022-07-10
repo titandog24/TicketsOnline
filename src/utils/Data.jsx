@@ -73,3 +73,48 @@ export const ListaPatrocinador = () => {
         }
     ]
 }
+
+export const OpcionesDelFooter = () => {
+   return [
+        {
+           categoria: "Tickets",
+           opciones: [
+            "Producto",
+            "Planillas",
+            "Software de reserva de espacios",
+            "Tickets para empresas",
+            "Tickets vs otras herramientas",
+            "Precios"
+           ]
+        },
+        {
+           categoria: "Recursos",
+           opciones: [
+            "Blog",
+            "Centro de ayuda",
+            "Contacto",
+            "Sobre",
+            "Carreras ¡Estamos contratando!",
+            "Investigar",
+            "Prensa"
+           ]
+        },
+        {
+           categoria: "Redes sociales",
+           opciones: [
+            "Facebook",
+            "Twitter",
+            "LinkedIn",
+            "Instagram",
+            "Tik Tok"
+           ]
+        },
+        {
+           categoria: "Legal",
+           opciones: [
+            "Política de privacidad",
+            "Términos de servicio"
+           ]
+        }
+    ]
+}

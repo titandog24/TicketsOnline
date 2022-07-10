@@ -8,12 +8,6 @@ import { ListaPatrocinador, TitulosYTexto } from '../../utils/Data'
 const RenderPatrocinador = ({ patrocinador }) => {
     return (
         <Grid item md={3} justifyContent={'center'} alignContent={'center'} display={'flex'}>
-            {/* <CardMedia
-                component='img'
-                image={patrocinador.logo}
-                height='60'
-                alt={patrocinador.nombre}
-            /> */}
             <div style={{ justifyContent: 'center', display: 'flex', alignItems: 'center', opacity: '0.3' }}>
                 <img src={patrocinador.logo} alt={patrocinador.nombre} style={{ width: '50%' }} />
             </div>
@@ -27,7 +21,7 @@ const Patrocinadores = () => {
     const ListaDePatrocinadores = ListaPatrocinador()
     const TituloPatrocinadores = TitulosYTexto().tituloPatrocinadores
     return (
-        <Grid container item spacing={1}>
+        <Grid container item spacing={1} marginTop='8rem'>
             <Grid item xs={12} justifyContent='center' alignContent={'center'} textAlign='center'>
                 <Typography variant='h6'>
                     {TituloPatrocinadores}
