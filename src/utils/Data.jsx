@@ -36,7 +36,8 @@ export const TitulosYTexto = () => {
     return {
         tituloPrincipal: 'La plataforma diseñada para reservar tus eventos, conciertos y actividades deportas favoritas',
         tituloSecundario: 'En pocos minutos puedes reserver tu espacio en los eventos más importantes del país. ¡No te los pierdas!',
-        tituloPatrocinadores: 'Con la confianza de personas y equipos de las empresas más importantes del mundo'
+        tituloPatrocinadores: 'Con la confianza de personas y equipos de las empresas más importantes del mundo',
+        nombreEmpresa: 'Tickets'
     }
 }
 export const ListaPatrocinador = () => {

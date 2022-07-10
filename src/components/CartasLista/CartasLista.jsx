@@ -1,7 +1,7 @@
-import React from 'react';
-import Grid from '@mui/material/Grid';
+import React from 'react'  
+import Grid from '@mui/material/Grid'  
 import {DatosListaCarta} from '../../utils/Data'
-import Cartas from '../Cartas/';
+import Cartas from '../Cartas/'  
 
 const RenderizarCarta = ({image, texto}) => {
     return <Cartas texto={texto} imagen={image} />
@@ -10,7 +10,7 @@ const RenderizarCarta = ({image, texto}) => {
 
 const CartasLista = () => {
     const Data = DatosListaCarta()
-    console.log(Data);
+    console.log(Data)  
     return (
         <Grid 
         container
@@ -22,7 +22,7 @@ const CartasLista = () => {
                 })
             }
         </Grid>
-    );
+    )  
 }
 
-export default CartasLista;
+export default CartasLista  

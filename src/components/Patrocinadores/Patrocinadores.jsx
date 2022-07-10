@@ -39,7 +39,7 @@ const Patrocinadores = () => {
                 })
             }
         </Grid>
-    );
+    )  
 }
 
-export default Patrocinadores;
+export default Patrocinadores  

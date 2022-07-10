@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'  
 import Card from '@mui/material/Card'
 
 const ContenidoIzquierdo = () => {
@@ -16,7 +16,7 @@ const ContenidoDerecho = () => {
 }
 
 const SegundoContenidoCentral = () => {
-    return [ContenidoIzquierdo(), ContenidoDerecho()];
+    return [ContenidoIzquierdo(), ContenidoDerecho()]  
 }
 
-export default SegundoContenidoCentral;
+export default SegundoContenidoCentral  

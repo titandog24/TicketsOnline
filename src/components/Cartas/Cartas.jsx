@@ -1,5 +1,5 @@
-import React from 'react';
-import { Grid, Card, Typography, CardMedia } from '@mui/material';
+import React from 'react'  
+import { Grid, Card, Typography, CardMedia } from '@mui/material'  
 import './Cartas.css'
 
 const Cartas = ({ imagen, texto }) => {
@@ -21,7 +21,7 @@ const Cartas = ({ imagen, texto }) => {
                 <Typography variant='h6'>{texto}</Typography>
             </Grid>
         </Grid>
-    );
+    )  
 }
 
-export default Cartas;
+export default Cartas  

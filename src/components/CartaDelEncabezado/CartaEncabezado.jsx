@@ -1,6 +1,6 @@
-import React from 'react';
-import { Button, CardMedia, Grid, Typography, Card } from '@mui/material';
-import { ImagenCartaEncabezado, TitulosYTexto } from '../../utils/Data';
+import React from 'react'  
+import { Button, CardMedia, Grid, Typography, Card } from '@mui/material'  
+import { ImagenCartaEncabezado, TitulosYTexto } from '../../utils/Data'  
 
 
 const ContIzq = (tituloPrincipal, tituloSecundario) => {
@@ -51,7 +51,7 @@ const CartaEncabezado = () => {
                 ContDer(imagenEncabezado)
             }
         </Grid>
-    );
+    )  
 }
 
-export default CartaEncabezado;
+export default CartaEncabezado  

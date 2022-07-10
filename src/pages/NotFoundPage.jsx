@@ -1,25 +1,23 @@
-import Grid  from '@mui/material/Grid';
-import Typography  from '@mui/material/Typography';
-import React from 'react';
-import Link from '@mui/material/Link'
-import { Link as RouterLink } from 'react-router-dom'
+import Grid from '@mui/material/Grid' 
+import Typography from '@mui/material/Typography' 
+import React from 'react' 
+import AppFrame from '../components/AppFrame'
 
 const NotFoundPage = () => {
     return (
-        <Grid 
-        justifyContent={'center'} 
-        alignContent={'center'}
-        direction='column' container item>
-            <Grid item>
-            <Typography>
-                ¡Ups! La página no ha sido encontrada
-            </Typography>
-            <Link to='/' component={RouterLink} color='inherit' aria-label='menu' textAlign={'center'}>
-                Volver al inicio
-            </Link>
+        <AppFrame>
+            <Grid
+                justifyContent={'center'}
+                alignContent={'center'}
+                direction='column' container item>
+                <Grid item>
+                    <Typography variant='h1'>
+                        ¡Ups! La página no ha sido encontrada
+                    </Typography>
+                </Grid>
             </Grid>
-        </Grid>
-    );
+        </AppFrame>
+    )
 }
 
-export default NotFoundPage;
+export default NotFoundPage

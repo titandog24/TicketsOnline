@@ -1,7 +1,7 @@
-import React from 'react';
-import Grid from '@mui/material/Grid';
-import PrimerContenidoCentral from './PrimerContenidoCentral';
-import SegundoContenidoCentral from './SegundoContenidoCentral';
+import React from 'react'  
+import Grid from '@mui/material/Grid'  
+import PrimerContenidoCentral from './PrimerContenidoCentral'  
+import SegundoContenidoCentral from './SegundoContenidoCentral'  
 
 const RenderCardDual = ({component}) => {
     const [ContenidoIzquierdo, ContenidoDerecho] = component()
@@ -32,7 +32,7 @@ const ContenidoCentral = ({indice}) => {
 
     return (
         <RenderCardDual component={ObtenerComponent(indice)} />
-    );
+    )  
 }
 
-export default ContenidoCentral;
+export default ContenidoCentral  
