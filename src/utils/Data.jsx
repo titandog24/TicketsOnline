@@ -28,6 +28,10 @@ export const DatosListaCarta = () => {
     return data
 }
 
+export const LogoEmpresa = () => {
+    return `${process.env.PUBLIC_URL}/img/logo.png`
+}
+
 export const ImagenCartaEncabezado = () => {
     return 'https://blog.facialix.com/wp-content/uploads/2021/03/hello_world_facialix-1.jpg'
 }
