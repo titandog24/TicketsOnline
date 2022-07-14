@@ -1,3 +1,4 @@
+import moment from 'moment'
 export const DatosListaCarta = () => {
     const data = [
         {
@@ -41,7 +42,17 @@ export const TitulosYTexto = () => {
         tituloPrincipal: 'La plataforma diseñada para reservar tus eventos, conciertos y actividades deportas favoritas',
         tituloSecundario: 'En pocos minutos puedes reserver tu espacio en los eventos más importantes del país. ¡No te los pierdas!',
         tituloPatrocinadores: 'Con la confianza de personas y equipos de las empresas más importantes del mundo',
-        nombreEmpresa: 'Tickets'
+        nombreEmpresa: 'Tickets',
+        tituloMultiplataforma: 'Reservación Fácil',
+        tituloSecundarioMultiplataforma: 'Existen muchas formas de reservar un espacio en un evento, ¡pero ninguna tan fácil y rápido como Tickets!',
+        tituloEstadistica: '¡Nuestros usuarios aumentan rápidamente!',
+        subtituloEstadistica: 'Unete tu también y descubre las ventajas, promociones y descuentos por ser un miembro activo de Tickets'
+    }
+}
+
+export const ListaDeImagenes = () => {
+    return {
+        TercerContenidoWelcome:'https://uizard.io/static/ed3b9ff8e4dfdf9e6fea5799733f881d/a8d7d/shoutout-image-a.webp'
     }
 }
 export const ListaPatrocinador = () => {
@@ -119,6 +130,31 @@ export const OpcionesDelFooter = () => {
             "Política de privacidad",
             "Términos de servicio"
            ]
+        }
+    ]
+}
+
+export const dataAumentoDeUsuarios = () => {
+    return [
+        {
+            day: moment().subtract(5, 'days').format('DD/MM/YYYY'),
+            NuevosUsuarios: 5
+        },
+        {
+            day: moment().subtract(4, 'days').format('DD/MM/YYYY'),
+            NuevosUsuarios: 15
+        },
+        {
+            day: moment().subtract(3, 'days').format('DD/MM/YYYY'),
+            NuevosUsuarios: 50
+        },
+        {
+            day: moment().subtract(2, 'days').format('DD/MM/YYYY'),
+            NuevosUsuarios: 80
+        },
+        {
+            day: moment().subtract(1, 'days').format('DD/MM/YYYY'),
+            NuevosUsuarios: 100
         }
     ]
 }

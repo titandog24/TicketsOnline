@@ -16,6 +16,9 @@ import DiscountIcon from '@mui/icons-material/Discount'
 import { TitulosYTexto } from '../../utils/Data'  
 import Grid from '@mui/material/Grid'
 
+import Link from '@mui/icons-material/Link'
+import {Link as RouterLink} from 'react-router-dom'
+
 const pages = ['Empresa', 'Noticias', 'Contactenos']  
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout']  
 const nombreEmpresa = TitulosYTexto().nombreEmpresa
@@ -133,7 +136,9 @@ const AppBars = () => {
               sx={{ my: 2, color: 'white', display: 'block' }}
               style={{ textTransform: 'capitalize' }}
             >
-              {page}
+              <Link to='/test' component={RouterLink}>
+                  {page}
+              </Link>
             </Button>
           ))}
         </Box>
