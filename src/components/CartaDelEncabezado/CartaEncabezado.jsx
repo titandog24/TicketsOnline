@@ -38,8 +38,7 @@ const CartaEncabezado = () => {
     return (
         <Grid
             container 
-            item
-            marginTop={'15rem'}>
+            item>
             {
                 ContIzq(tituloPrincipal, tituloSecundario)
             }

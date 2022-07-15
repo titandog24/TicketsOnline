@@ -1,10 +1,11 @@
 import React from 'react';
+import AppFrame from '../components/AppFrame';
 
 const EmpresaPage = () => {
     return (
-        <div>
+        <AppFrame>
             <h1>HolaEmpresa</h1>
-        </div>
+        </AppFrame>
     );
 }
 

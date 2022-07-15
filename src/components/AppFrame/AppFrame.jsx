@@ -1,22 +1,23 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import Footer from '../Footer/'
-import { Grid } from '@mui/material'
-
-
+import Grid from '@mui/material/Grid'
+import AppBars from '../AppBars';
+import Footer from '../Footer'
 const AppFrame = ({ children }) => {
-  return (
-    <>
-      <Grid container justifyContent={'center'} paddingRight={{md: '15rem'}} paddingLeft={{md: '15rem'}}>
-        {children}
-        <Footer />
-      </Grid>
-    </>
-  )
+    return (
+        <>
+            <AppBars />
+            <Grid container justifyContent={'center'}>
+                <Grid container item marginTop={{ xs: '5rem', md: '10rem' }}
+                    xs={12}
+                    sm={11}
+                    md={10}
+                    lg={8}>
+                    {children}
+                </Grid>
+                <Footer />
+            </Grid>
+        </>
+    );
 }
 
-AppFrame.propTypes = {
-  isLogged: PropTypes.bool
-}
-
-export default AppFrame
+export default AppFrame;

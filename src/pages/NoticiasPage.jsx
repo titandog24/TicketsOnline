@@ -1,10 +1,11 @@
 import React from 'react';
+import AppFrame from '../components/AppFrame';
 
 const NoticiasPage = () => {
     return (
-        <div>
+        <AppFrame>
             <h1>HolaNoticia</h1>
-        </div>
+        </AppFrame>
     );
 }
 

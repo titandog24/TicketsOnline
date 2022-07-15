@@ -1,26 +1,24 @@
-import React from 'react'  
-import CartaEncabezado from '../components/CartaDelEncabezado/'  
+import React from 'react'
+import CartaEncabezado from '../components/CartaDelEncabezado/'
 import Patrocinadores from '../components/Patrocinadores/'
-import ContenidoCentral from '../components/ContenidoCentral/'  
-import AppFrame from '../components/AppFrame'  
+import ContenidoCentral from '../components/ContenidoCentral/'
+import AppFrame from '../components/AppFrame'
 import CartasLista from '../components/CartasLista/CartasLista'
 import CartaDeMultiplataforma from '../components/CartaDeMultiplataforma'
-import AppBars from '../components/AppBars'
 
 
 const WelcomePage = () => {
     return (
         <>
-            <AppBars />
             <AppFrame>
-            <CartaEncabezado />
-            <Patrocinadores />
-            <ContenidoCentral indice={1} />
-            <CartasLista />
-            <CartaDeMultiplataforma />
-        </AppFrame>
+                <CartaEncabezado />
+                <Patrocinadores />
+                <ContenidoCentral indice={1} />
+                <CartasLista />
+                <CartaDeMultiplataforma />
+            </AppFrame>
         </>
-    )  
+    )
 }
 
 export default WelcomePage  
