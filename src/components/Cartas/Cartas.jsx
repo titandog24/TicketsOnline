@@ -6,9 +6,7 @@ const Cartas = ({ imagen, texto }) => {
     return (
         <Grid
             container item
-            justifyContent='center'
-            alignContent='center'
-            xs={4}>
+            xs={12} md={4}>
             <Grid container item xs={12}>
                 <Card>
                     <CardMedia component={'img'}
@@ -17,8 +15,8 @@ const Cartas = ({ imagen, texto }) => {
                         alt='Carros' />
                 </Card>
             </Grid>
-            <Grid container item xs={12} justifyContent='center' alignContent={'center'}>
-                <Typography variant='h6'>{texto}</Typography>
+            <Grid container item xs={12} justifyContent={'center'}>
+                <Typography fontSize={'1rem'}>{texto}</Typography>
             </Grid>
         </Grid>
     )  

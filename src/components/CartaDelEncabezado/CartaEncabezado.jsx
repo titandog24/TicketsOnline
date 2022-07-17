@@ -1,6 +1,7 @@
 import React from 'react'  
-import { Button, Grid, Typography, Card } from '@mui/material'  
+import { Button, Grid, Typography, Card, Link } from '@mui/material'  
 import { ImagenCartaEncabezado, TitulosYTexto } from '../../utils/Data'  
+import {Link as RouterLink} from 'react-router-dom'
 
 
 const ContIzq = (tituloPrincipal, tituloSecundario) => {
@@ -17,7 +18,11 @@ const ContIzq = (tituloPrincipal, tituloSecundario) => {
                 </Typography>
             </Grid>
             <Grid item xs={12}>
-                <Button variant="outlined" color='secondary'>Registrate ahora</Button>
+                <Button variant="outlined" color='secondary'>
+                    <Link to={'/Registro'} component={RouterLink}>
+                        Registrate ahora
+                    </Link>
+                </Button>
             </Grid>
         </Grid>
     )

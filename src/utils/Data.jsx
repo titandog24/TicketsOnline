@@ -3,7 +3,7 @@ export const DatosListaCarta = () => {
     const data = [
         {
             imagen: 'https://www.eluniverso.com/resizer/sEF3HisnunOeLFvWeuuXpNeqIAQ=/960x670/smart/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/eluniverso/C4OJC3KWRRAKBOZ4RCITMNXMAI.jpg',
-            texto: 'Concierto de Cold Play en Estadio Nacional'
+            texto: 'Cold Play en Estadio Nacional'
         },
         {
             imagen: 'https://images.squarespace-cdn.com/content/v1/58597a19e58c62ba7fa48bf9/1539736835805-QTOHF9X0E88SHXZQDZKA/43879061_10155988196823262_1541225434799144960_n.jpg',
@@ -29,8 +29,11 @@ export const DatosListaCarta = () => {
     return data
 }
 
-export const LogoEmpresa = () => {
-    return `${process.env.PUBLIC_URL}/img/logo.png`
+export const listDeImagenes = () => {
+    return {
+        logoEmpresa:`${process.env.PUBLIC_URL}/img/logo.png`,
+        fondoRegistro: `${process.env.PUBLIC_URL}/img/fondoRegistro.jpg`
+    }
 }
 
 export const ImagenCartaEncabezado = () => {
@@ -46,7 +49,8 @@ export const TitulosYTexto = () => {
         tituloMultiplataforma: 'Reservación Fácil',
         tituloSecundarioMultiplataforma: 'Existen muchas formas de reservar un espacio en un evento, ¡pero ninguna tan fácil y rápido como Tickets!',
         tituloEstadistica: '¡Nuestros usuarios aumentan rápidamente!',
-        subtituloEstadistica: 'Unete tu también y descubre las ventajas, promociones y descuentos por ser un miembro activo de Tickets'
+        subtituloEstadistica: 'Unete tu también y descubre las ventajas, promociones y descuentos por ser un miembro activo de Tickets',
+        tituloListaEventos: 'Nuestros próximos eventos más importantes'
     }
 }
 

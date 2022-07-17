@@ -1,7 +1,7 @@
 import React from 'react'
 import { Grid, Link, Typography } from '@mui/material'
 import {Link as RouterLink} from 'react-router-dom'
-import { OpcionesDelFooter, LogoEmpresa } from '../../utils/Data' 
+import { OpcionesDelFooter, listDeImagenes } from '../../utils/Data' 
 
 const RenderizarOpcion = ({valor}) => {
     return (
@@ -34,7 +34,7 @@ const RenderizarLogo = () => {
     return (
         <>
             <Grid item xs={12} textAlign='center' style={{marginBottom:'1rem'}}>
-                <img src={LogoEmpresa()} alt='logo empresa' style={{maxWidth:'8rem'}} />
+                <img src={listDeImagenes().logoEmpresa} alt='logo empresa' style={{maxWidth:'8rem'}} />
             </Grid>
             <Grid item xs={12} textAlign='center'>
                 <Typography>

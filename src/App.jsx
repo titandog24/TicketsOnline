@@ -7,33 +7,34 @@ import NotFoundPage from './pages/NotFoundPage';
 import EmpresaPage from './pages/EmpresaPage';
 import NoticiasPage from './pages/NoticiasPage';
 import ContactenosPage from './pages/ContactenosPage';
+import RegisterPage from './pages/RegistroUsuarios/RegisterPage';
 
 
 const App = () => {
   return (
-    <Grid container
-    justifyContent={'center'}
-    direction={'row'}>
-         <Router>
-        <Switch>
-          <Route exact path={"/"}>
-            <WelcomePage />
-          </Route>
-          <Route path={"/Noticias"}>
-            <NoticiasPage />
-          </Route>
-          <Route path={"/Contactenos"}>
-            <ContactenosPage />
-          </Route>
-          <Route path={"/Empresa"}>
-            <EmpresaPage />
-          </Route>
-          <Route>
-            <NotFoundPage />
-          </Route>
-        </Switch>
-      </Router>
-    </Grid>
+
+    <Router>
+      <Switch>
+        <Route exact path={"/"}>
+          <WelcomePage />
+        </Route>
+        <Route path={"/Noticias"}>
+          <NoticiasPage />
+        </Route>
+        <Route path={"/Contactenos"}>
+          <ContactenosPage />
+        </Route>
+        <Route path={"/Empresa"}>
+          <EmpresaPage />
+        </Route>
+        <Route path={"/Registro"}>
+          <RegisterPage />
+        </Route>
+        <Route>
+          <NotFoundPage />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

@@ -6,7 +6,9 @@ const AppFrame = ({ children }) => {
     return (
         <>
             <AppBars />
-            <Grid container justifyContent={'center'}>
+            <Grid container
+                    justifyContent={'center'}
+                    direction={'row'}>
                 <Grid container item marginTop={{ xs: '5rem', md: '10rem' }}
                     xs={12}
                     sm={11}

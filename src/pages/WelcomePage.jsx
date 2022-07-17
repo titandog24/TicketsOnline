@@ -7,15 +7,16 @@ import CartasLista from '../components/CartasLista/CartasLista'
 import CartaDeMultiplataforma from '../components/CartaDeMultiplataforma'
 
 
+
 const WelcomePage = () => {
     return (
         <>
             <AppFrame>
-                <CartaEncabezado />
-                <Patrocinadores />
-                <ContenidoCentral indice={1} />
-                <CartasLista />
-                <CartaDeMultiplataforma />
+                    <CartaEncabezado />
+                    <Patrocinadores />
+                    <ContenidoCentral indice={1} />
+                    <CartasLista />
+                    <CartaDeMultiplataforma />
             </AppFrame>
         </>
     )
