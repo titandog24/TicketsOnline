@@ -1,7 +1,7 @@
 import React from 'react'
 import { Grid, Link, Typography } from '@mui/material'
 import {Link as RouterLink} from 'react-router-dom'
-import { OpcionesDelFooter, listDeImagenes } from '../../utils/Data' 
+import { OpcionesDelFooter, ListaDeImagenes } from '../../utils/Data' 
 
 const RenderizarOpcion = ({valor}) => {
     return (
@@ -34,7 +34,7 @@ const RenderizarLogo = () => {
     return (
         <>
             <Grid item xs={12} textAlign='center' style={{marginBottom:'1rem'}}>
-                <img src={listDeImagenes().logoEmpresa} alt='logo empresa' style={{maxWidth:'8rem'}} />
+                <img src={ListaDeImagenes().logoEmpresa} alt='logo empresa' style={{maxWidth:'8rem'}} />
             </Grid>
             <Grid item xs={12} textAlign='center'>
                 <Typography>
@@ -55,7 +55,7 @@ const Footer = () => {
             <Grid item xs={12} md={4}>
                 <RenderizarLogo />
             </Grid>
-            <Grid container item direction={'row'} xs={12} md={8} spacing={5} justifyContent='center'>
+            <Grid container item direction={'row'} xs={12} md={8} spacing={5} justifyContent='center' textAlign={{xs:'center', md:'left'}}>
                 {
                     arregloConOpcionesDelFooter.map(opcion => <RenderizarOpcionesDelFooter key={opcion.categoria} opcion={opcion} />)
                 }

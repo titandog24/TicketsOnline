@@ -1,7 +1,6 @@
 import React from 'react'
 import Grid from '@mui/material/Grid'
 import PrimerContenidoCentral from './PrimerContenidoCentral'
-import SegundoContenidoCentral from './SegundoContenidoCentral'
 
 const RenderCardDual = ({ component }) => {
     const [ContenidoIzquierdo, ContenidoDerecho] = component()
@@ -21,8 +20,6 @@ const ObtenerComponent = (indiceDeComponente) => {
     switch (indiceDeComponente) {
         case 1:
             return PrimerContenidoCentral
-        case 2:
-            return SegundoContenidoCentral
         default:
             return PrimerContenidoCentral
     }

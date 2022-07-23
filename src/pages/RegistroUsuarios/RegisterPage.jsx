@@ -1,14 +1,14 @@
 import React from 'react';
 import Grid from '@mui/material/Grid'
 import FormularioRegistro from '../../components/FormularioRegistro';
-import { listDeImagenes } from '../../utils/Data';
+import { ListaDeImagenes } from '../../utils/Data';
 import './RegisterPage.css'
 
 
 
 
 const RegisterPage = () => {
-    const fondo = listDeImagenes().fondoRegistro
+    const fondo = ListaDeImagenes().fondoRegistro
     return (
         <>
 

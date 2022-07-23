@@ -43,7 +43,7 @@ const CartaEncabezado = () => {
     return (
         <Grid
             container 
-            item>
+            item marginTop={{ xs: '5rem', md: '10rem' }}>
             {
                 ContIzq(tituloPrincipal, tituloSecundario)
             }

@@ -29,10 +29,34 @@ export const DatosListaCarta = () => {
     return data
 }
 
-export const listDeImagenes = () => {
+export const ListaOpcionesDetalle = () => {
+    return [
+        {
+            titulo:'Nuestra misión',
+            detalle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deleniti, nesciunt consectetur neque nihil blanditiis eum laborum inventore iusto odio obcaecati ea enim ad animi vero expedita, alias totam facilis?'
+        },
+        {
+            titulo:'Nuestra misión',
+            detalle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deleniti, nesciunt consectetur neque nihil blanditiis eum laborum inventore iusto odio obcaecati ea enim ad animi vero expedita, alias totam facilis?'
+        },
+        {
+            titulo:'Nuestra misión',
+            detalle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deleniti, nesciunt consectetur neque nihil blanditiis eum laborum inventore iusto odio obcaecati ea enim ad animi vero expedita, alias totam facilis?'
+        },
+        {
+            titulo:'Nuestra misión',
+            detalle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deleniti, nesciunt consectetur neque nihil blanditiis eum laborum inventore iusto odio obcaecati ea enim ad animi vero expedita, alias totam facilis?'
+        }
+    ]
+}
+
+export const ListaDeImagenes = () => {
     return {
         logoEmpresa:`${process.env.PUBLIC_URL}/img/logo.png`,
-        fondoRegistro: `${process.env.PUBLIC_URL}/img/fondoRegistro.jpg`
+        fondoRegistro: `${process.env.PUBLIC_URL}/img/fondoRegistro.jpg`,
+        TercerContenidoWelcome:'https://uizard.io/static/ed3b9ff8e4dfdf9e6fea5799733f881d/a8d7d/shoutout-image-a.webp',
+        imagenDelHeader: `${process.env.PUBLIC_URL}/img/fondoRegistro.jpg`,
+        imagenOficinaInicio: `${process.env.PUBLIC_URL}/img/inicioTickets.jpg`
     }
 }
 
@@ -50,15 +74,14 @@ export const TitulosYTexto = () => {
         tituloSecundarioMultiplataforma: 'Existen muchas formas de reservar un espacio en un evento, ¡pero ninguna tan fácil y rápido como Tickets!',
         tituloEstadistica: '¡Nuestros usuarios aumentan rápidamente!',
         subtituloEstadistica: 'Unete tu también y descubre las ventajas, promociones y descuentos por ser un miembro activo de Tickets',
-        tituloListaEventos: 'Nuestros próximos eventos más importantes'
+        tituloListaEventos: 'Nuestros próximos eventos más importantes',
+        historiaTickets: 'Historia de Tickets',
+        resumenHistoria: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deleniti, nesciunt consectetur neque nihil blanditiis eum laborum inventore iusto odio obcaecati ea enim ad animi vero expedita, alias totam facilis?',
+        tituloMision:'Misión y Visión',
+        detalleMision: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deleniti, nesciunt consectetur neque nihil blanditiis eum laborum inventore iusto odio obcaecati ea enim ad animi vero expedita, alias totam facilis?'
     }
 }
 
-export const ListaDeImagenes = () => {
-    return {
-        TercerContenidoWelcome:'https://uizard.io/static/ed3b9ff8e4dfdf9e6fea5799733f881d/a8d7d/shoutout-image-a.webp'
-    }
-}
 export const ListaPatrocinador = () => {
     const url = `${process.env.PUBLIC_URL}/img/`
     return [
@@ -159,6 +182,43 @@ export const dataAumentoDeUsuarios = () => {
         {
             day: moment().subtract(1, 'days').format('DD/MM/YYYY'),
             NuevosUsuarios: 100
+        }
+    ]
+}
+
+export const DataDeEventos = () => {
+    return [
+        {
+            fechaPublicacion: 'From 6 sept 2017 until 7 March 2018',
+            titulo: 'Electricity: The Spark of Life',
+            detalle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit labore accusamus dolor inventore iste recusandae libero ratione eius dicta sed voluptas quasi voluptatum quo aliquid quos, asperiores molestiae id explicabo!',
+            enlace: '/',
+            imagen: `${process.env.PUBLIC_URL}/img/fondoRegistro.jpg`,
+            orientacionImagen: 'I'
+        },
+        {
+            fechaPublicacion: 'From 6 sept 2017 until 7 March 2018',
+            titulo: 'Electricity: The Spark of Life',
+            detalle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit labore accusamus dolor inventore iste recusandae libero ratione eius dicta sed voluptas quasi voluptatum quo aliquid quos, asperiores molestiae id explicabo!',
+            enlace: '/',
+            imagen: `${process.env.PUBLIC_URL}/img/fondoRegistro.jpg`,
+            orientacionImagen: 'D'
+        },
+        {
+            fechaPublicacion: 'From 6 sept 2017 until 7 March 2018',
+            titulo: 'Electricity: The Spark of Life',
+            detalle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit labore accusamus dolor inventore iste recusandae libero ratione eius dicta sed voluptas quasi voluptatum quo aliquid quos, asperiores molestiae id explicabo!',
+            enlace: '/',
+            imagen: `${process.env.PUBLIC_URL}/img/fondoRegistro.jpg`,
+            orientacionImagen: 'I'
+        },
+        {
+            fechaPublicacion: 'From 6 sept 2017 until 7 March 2018',
+            titulo: 'Electricity: The Spark of Life',
+            detalle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit labore accusamus dolor inventore iste recusandae libero ratione eius dicta sed voluptas quasi voluptatum quo aliquid quos, asperiores molestiae id explicabo!',
+            enlace: '/',
+            imagen: `${process.env.PUBLIC_URL}/img/fondoRegistro.jpg`,
+            orientacionImagen: 'D'
         }
     ]
 }

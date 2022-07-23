@@ -1,7 +1,6 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-import Paper from '@mui/material/Paper';
 import TextField from '@mui/material/TextField'
 import FormGroup from '@mui/material/FormGroup'
 import FormControlLabel from '@mui/material/FormControlLabel';
@@ -9,7 +8,7 @@ import Button from '@mui/material/Button'
 import Checkbox from '@mui/material/Checkbox';
 import Link from '@mui/material/Link'
 import { Link as RouterLink } from 'react-router-dom'
-import { listDeImagenes } from '../../utils/Data';
+import { ListaDeImagenes } from '../../utils/Data';
 
 const FormularioRegistro = () => {
     return (
@@ -17,7 +16,7 @@ const FormularioRegistro = () => {
             <Grid container item direction={'row'} sx={{ mb: 5, height: '10%' }}>
                 <Grid container item xs={12} sx={{p:5}}>
                     <Grid item xs={6}>
-                        <img src={listDeImagenes().logoEmpresa} alt='logo empresa' style={{ maxWidth: '8rem', maxHeight: '5rem' }} />
+                        <img src={ListaDeImagenes().logoEmpresa} alt='logo empresa' style={{ maxWidth: '8rem', maxHeight: '5rem' }} />
                     </Grid>
                     <Grid item xs={6} textAlign={'right'}>
                         <Typography style={{marginTop:'1rem'}}>
