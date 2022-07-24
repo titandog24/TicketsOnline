@@ -1,10 +1,15 @@
 import React from 'react';
 import AppFrame from '../components/AppFrame';
+import CartaDeMultiplataforma from '../components/CartaDeMultiplataforma';
+import Contact from '../components/Contact';
+
+
 
 const ContactenosPage = () => {
     return (
         <AppFrame>
-            <h1>HolaContactenos</h1>
+            <Contact />
+            <CartaDeMultiplataforma />
         </AppFrame>
     );
 }

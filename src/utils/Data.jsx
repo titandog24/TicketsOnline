@@ -56,7 +56,8 @@ export const ListaDeImagenes = () => {
         fondoRegistro: `${process.env.PUBLIC_URL}/img/fondoRegistro.jpg`,
         TercerContenidoWelcome:'https://uizard.io/static/ed3b9ff8e4dfdf9e6fea5799733f881d/a8d7d/shoutout-image-a.webp',
         imagenDelHeader: `${process.env.PUBLIC_URL}/img/fondoRegistro.jpg`,
-        imagenOficinaInicio: `${process.env.PUBLIC_URL}/img/inicioTickets.jpg`
+        imagenOficinaInicio: `${process.env.PUBLIC_URL}/img/inicioTickets.jpg`,
+        imagenMapa: `${process.env.PUBLIC_URL}/img/Liberia.png`
     }
 }
 
@@ -219,6 +220,26 @@ export const DataDeEventos = () => {
             enlace: '/',
             imagen: `${process.env.PUBLIC_URL}/img/fondoRegistro.jpg`,
             orientacionImagen: 'D'
+        }
+    ]
+}
+
+export const formatForm = () => {
+    return  [
+        {
+            input: 'text',
+            id: 'fullname',
+            label: 'Nombre completo'
+        },
+        {
+            input: 'text',
+            id: 'email',
+            label: 'Correo electrónico'
+        },
+        {
+            input: 'text',
+            id: 'company',
+            label: 'Compañia'
         }
     ]
 }
