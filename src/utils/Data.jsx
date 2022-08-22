@@ -79,7 +79,9 @@ export const TitulosYTexto = () => {
         historiaTickets: 'Historia de Tickets',
         resumenHistoria: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deleniti, nesciunt consectetur neque nihil blanditiis eum laborum inventore iusto odio obcaecati ea enim ad animi vero expedita, alias totam facilis?',
         tituloMision:'Misión y Visión',
-        detalleMision: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deleniti, nesciunt consectetur neque nihil blanditiis eum laborum inventore iusto odio obcaecati ea enim ad animi vero expedita, alias totam facilis?'
+        detalleMision: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deleniti, nesciunt consectetur neque nihil blanditiis eum laborum inventore iusto odio obcaecati ea enim ad animi vero expedita, alias totam facilis?',
+        tituloBlog: 'El blog de noticias de Ticikets',
+        detalleBlog: 'Bienvenido al blog oficial de Ticket, donde puede aprender sobre todo lo relacionado con el diseño y leer las últimas noticias globales. Ya sea que sea un profesional experimentado o un recién llegado, hay algo para todos en el Blog de noticias de Tickets'
     }
 }
 
@@ -243,3 +245,214 @@ export const formatForm = () => {
         }
     ]
 }
+
+export const noticias =  [
+    {
+        pagination: {
+            limit : 30,
+            offset : 0,
+            count : 30,
+            total : 10000
+        },
+        data: [
+            {
+                author: "اليوم السابع",
+                title: "القضاء البريطاني يبرئ إيد شيران فى سرقة أغنية \" Shape of you\" - اليوم السابع",
+                description: "استطاع نجم البوب البريطاني إيد شيران الربح في معركته القضائية، حيث خلصته المحكمة العليا في لندن من السرقة الأدبية في أغنيته الشهيرة \" Shape of you\"،",
+                url: "http://thinakhbarak.local/articles/43868029-%D8%A7%D9%84%D9%82%D8%B6%D8%A7%D8%A1-%D8%A7%D9%84%D8%A8%D8%B1%D9%8A%D8%B7%D8%A7%D9%86%D9%8A-%D9%8A%D8%A8%D8%B1%D8%A6-%D8%A5%D9%8A%D8%AF-%D8%B4%D9%8A%D8%B1%D8%A7%D9%86-%D9%81%D9%89-%D8%B3%D8%B1%D9%82%D8%A9",
+                source: "Akhbarak.net",
+                image: "https://i.discogs.com/lVOppFOmQY2H0Ze9amRdcK0tR0c69DQae0j04KScMQM/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTIxODQ0/ODItMTYyNDYxNzk3/NS0xMjcxLmpwZWc.jpeg",
+                category: "general",
+                language: "ar",
+                country: "eg",
+                published_at: "2022-04-06T13:52:14+00:00"
+            },
+            {
+                author: "test1",
+                title: "القضاء البريطاني يبرئ إيد شيران sdfsdfsdf سرقة أغنية \" Shape of you\" - اليوم السابع",
+                description: "استطاع نجم البوب البريطاني إيد شيران الربح في معركته القضائية، حيث خلصته المحكمة العليا في لندن من السرقة الأدبية في أغنيته الشهيرة \" Shape of you\"،",
+                url: "http://thinakhbarak.local/articles/43868029-%D8%A7%D9%84%D9%82%D8%B6%D8%A7%D8%A1-%D8%A7%D9%84%D8%A8%D8%B1%D9%8A%D8%B7%D8%A7%D9%86%D9%8A-%D9%8A%D8%A8%D8%B1%D8%A6-%D8%A5%D9%8A%D8%AF-%D8%B4%D9%8A%D8%B1%D8%A7%D9%86-%D9%81%D9%89-%D8%B3%D8%B1%D9%82%D8%A9",
+                source: "Akhbarak.net",
+                image: "https://i.discogs.com/lVOppFOmQY2H0Ze9amRdcK0tR0c69DQae0j04KScMQM/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTIxODQ0/ODItMTYyNDYxNzk3/NS0xMjcxLmpwZWc.jpeg",
+                category: "general",
+                language: "ar",
+                country: "eg",
+                published_at: "2022-04-06T13:52:14+00:00"
+            },
+            {
+                author: "test2",
+                title: "القضاء البريطاني يبرئ إيد شيران sdfsdfsdf سرقة أغنية \" Shape of you\" - اليوم السابع",
+                description: "استطاع نجم البوب البريطاني إيد شيران الربح في معركته القضائية، حيث خلصته المحكمة العليا في لندن من السرقة الأدبية في أغنيته الشهيرة \" Shape of you\"،",
+                url: "http://thinakhbarak.local/articles/43868029-%D8%A7%D9%84%D9%82%D8%B6%D8%A7%D8%A1-%D8%A7%D9%84%D8%A8%D8%B1%D9%8A%D8%B7%D8%A7%D9%86%D9%8A-%D9%8A%D8%A8%D8%B1%D8%A6-%D8%A5%D9%8A%D8%AF-%D8%B4%D9%8A%D8%B1%D8%A7%D9%86-%D9%81%D9%89-%D8%B3%D8%B1%D9%82%D8%A9",
+                source: "Akhbarak.net",
+                image: "https://i.discogs.com/lVOppFOmQY2H0Ze9amRdcK0tR0c69DQae0j04KScMQM/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTIxODQ0/ODItMTYyNDYxNzk3/NS0xMjcxLmpwZWc.jpeg",
+                category: "general",
+                language: "ar",
+                country: "eg",
+                published_at: "2022-04-06T13:52:14+00:00"
+            },
+            {
+                author: "test3",
+                title: "القضاء البريطاني يبرئ إيد شيران sdfsdfsdf سرقة أغنية \" Shape of you\" - اليوم السابع",
+                description: "استطاع نجم البوب البريطاني إيد شيران الربح في معركته القضائية، حيث خلصته المحكمة العليا في لندن من السرقة الأدبية في أغنيته الشهيرة \" Shape of you\"،",
+                url: "http://thinakhbarak.local/articles/43868029-%D8%A7%D9%84%D9%82%D8%B6%D8%A7%D8%A1-%D8%A7%D9%84%D8%A8%D8%B1%D9%8A%D8%B7%D8%A7%D9%86%D9%8A-%D9%8A%D8%A8%D8%B1%D8%A6-%D8%A5%D9%8A%D8%AF-%D8%B4%D9%8A%D8%B1%D8%A7%D9%86-%D9%81%D9%89-%D8%B3%D8%B1%D9%82%D8%A9",
+                source: "Akhbarak.net",
+                image: "https://i.discogs.com/lVOppFOmQY2H0Ze9amRdcK0tR0c69DQae0j04KScMQM/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTIxODQ0/ODItMTYyNDYxNzk3/NS0xMjcxLmpwZWc.jpeg",
+                category: "general",
+                language: "ar",
+                country: "eg",
+                published_at: "2022-04-06T13:52:14+00:00"
+            },
+            {
+                author: "test4",
+                title: "القضاء البريطاني يبرئ إيد شيران sdfsdfsdf سرقة أغنية \" Shape of you\" - اليوم السابع",
+                description: "استطاع نجم البوب البريطاني إيد شيران الربح في معركته القضائية، حيث خلصته المحكمة العليا في لندن من السرقة الأدبية في أغنيته الشهيرة \" Shape of you\"،",
+                url: "http://thinakhbarak.local/articles/43868029-%D8%A7%D9%84%D9%82%D8%B6%D8%A7%D8%A1-%D8%A7%D9%84%D8%A8%D8%B1%D9%8A%D8%B7%D8%A7%D9%86%D9%8A-%D9%8A%D8%A8%D8%B1%D8%A6-%D8%A5%D9%8A%D8%AF-%D8%B4%D9%8A%D8%B1%D8%A7%D9%86-%D9%81%D9%89-%D8%B3%D8%B1%D9%82%D8%A9",
+                source: "Akhbarak.net",
+                image: "https://i.discogs.com/lVOppFOmQY2H0Ze9amRdcK0tR0c69DQae0j04KScMQM/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTIxODQ0/ODItMTYyNDYxNzk3/NS0xMjcxLmpwZWc.jpeg",
+                category: "general",
+                language: "ar",
+                country: "eg",
+                published_at: "2022-04-06T13:52:14+00:00"
+            },
+            {
+                author: "test5",
+                title: "القضاء البريطاني يبرئ إيد شيران sdfsdfsdf سرقة أغنية \" Shape of you\" - اليوم السابع",
+                description: "استطاع نجم البوب البريطاني إيد شيران الربح في معركته القضائية، حيث خلصته المحكمة العليا في لندن من السرقة الأدبية في أغنيته الشهيرة \" Shape of you\"،",
+                url: "http://thinakhbarak.local/articles/43868029-%D8%A7%D9%84%D9%82%D8%B6%D8%A7%D8%A1-%D8%A7%D9%84%D8%A8%D8%B1%D9%8A%D8%B7%D8%A7%D9%86%D9%8A-%D9%8A%D8%A8%D8%B1%D8%A6-%D8%A5%D9%8A%D8%AF-%D8%B4%D9%8A%D8%B1%D8%A7%D9%86-%D9%81%D9%89-%D8%B3%D8%B1%D9%82%D8%A9",
+                source: "Akhbarak.net",
+                image: "https://i.discogs.com/lVOppFOmQY2H0Ze9amRdcK0tR0c69DQae0j04KScMQM/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTIxODQ0/ODItMTYyNDYxNzk3/NS0xMjcxLmpwZWc.jpeg",
+                category: "general",
+                language: "ar",
+                country: "eg",
+                published_at: "2022-04-06T13:52:14+00:00"
+            },
+            {
+                author: "test6",
+                title: "القضاء البريطاني يبرئ إيد شيران sdfsdfsdf سرقة أغنية \" Shape of you\" - اليوم السابع",
+                description: "استطاع نجم البوب البريطاني إيد شيران الربح في معركته القضائية، حيث خلصته المحكمة العليا في لندن من السرقة الأدبية في أغنيته الشهيرة \" Shape of you\"،",
+                url: "http://thinakhbarak.local/articles/43868029-%D8%A7%D9%84%D9%82%D8%B6%D8%A7%D8%A1-%D8%A7%D9%84%D8%A8%D8%B1%D9%8A%D8%B7%D8%A7%D9%86%D9%8A-%D9%8A%D8%A8%D8%B1%D8%A6-%D8%A5%D9%8A%D8%AF-%D8%B4%D9%8A%D8%B1%D8%A7%D9%86-%D9%81%D9%89-%D8%B3%D8%B1%D9%82%D8%A9",
+                source: "Akhbarak.net",
+                image: "https://i.discogs.com/lVOppFOmQY2H0Ze9amRdcK0tR0c69DQae0j04KScMQM/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTIxODQ0/ODItMTYyNDYxNzk3/NS0xMjcxLmpwZWc.jpeg",
+                category: "general",
+                language: "ar",
+                country: "eg",
+                published_at: "2022-04-06T13:52:14+00:00"
+            },{
+                author: "test7",
+                title: "القضاء البريطاني يبرئ إيد شيران فى سرقة أغنية \" Shape of you\" - اليوم السابع",
+                description: "استطاع نجم البوب البريطاني إيد شيران الربح في معركته القضائية، حيث خلصته المحكمة العليا في لندن من السرقة الأدبية في أغنيته الشهيرة \" Shape of you\"،",
+                url: "http://thinakhbarak.local/articles/43868029-%D8%A7%D9%84%D9%82%D8%B6%D8%A7%D8%A1-%D8%A7%D9%84%D8%A8%D8%B1%D9%8A%D8%B7%D8%A7%D9%86%D9%8A-%D9%8A%D8%A8%D8%B1%D8%A6-%D8%A5%D9%8A%D8%AF-%D8%B4%D9%8A%D8%B1%D8%A7%D9%86-%D9%81%D9%89-%D8%B3%D8%B1%D9%82%D8%A9",
+                source: "Akhbarak.net",
+                image: "https://i.discogs.com/lVOppFOmQY2H0Ze9amRdcK0tR0c69DQae0j04KScMQM/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTIxODQ0/ODItMTYyNDYxNzk3/NS0xMjcxLmpwZWc.jpeg",
+                category: "general",
+                language: "ar",
+                country: "eg",
+                published_at: "2022-04-06T13:52:14+00:00"
+            },
+            {
+                author: "test8",
+                title: "القضاء البريطاني يبرئ إيد شيران sdfsdfsdf سرقة أغنية \" Shape of you\" - اليوم السابع",
+                description: "استطاع نجم البوب البريطاني إيد شيران الربح في معركته القضائية، حيث خلصته المحكمة العليا في لندن من السرقة الأدبية في أغنيته الشهيرة \" Shape of you\"،",
+                url: "http://thinakhbarak.local/articles/43868029-%D8%A7%D9%84%D9%82%D8%B6%D8%A7%D8%A1-%D8%A7%D9%84%D8%A8%D8%B1%D9%8A%D8%B7%D8%A7%D9%86%D9%8A-%D9%8A%D8%A8%D8%B1%D8%A6-%D8%A5%D9%8A%D8%AF-%D8%B4%D9%8A%D8%B1%D8%A7%D9%86-%D9%81%D9%89-%D8%B3%D8%B1%D9%82%D8%A9",
+                source: "Akhbarak.net",
+                image: "https://i.discogs.com/lVOppFOmQY2H0Ze9amRdcK0tR0c69DQae0j04KScMQM/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTIxODQ0/ODItMTYyNDYxNzk3/NS0xMjcxLmpwZWc.jpeg",
+                category: "general",
+                language: "ar",
+                country: "eg",
+                published_at: "2022-04-06T13:52:14+00:00"
+            },
+            {
+                author: "test9",
+                title: "القضاء البريطاني يبرئ إيد شيران sdfsdfsdf سرقة أغنية \" Shape of you\" - اليوم السابع",
+                description: "استطاع نجم البوب البريطاني إيد شيران الربح في معركته القضائية، حيث خلصته المحكمة العليا في لندن من السرقة الأدبية في أغنيته الشهيرة \" Shape of you\"،",
+                url: "http://thinakhbarak.local/articles/43868029-%D8%A7%D9%84%D9%82%D8%B6%D8%A7%D8%A1-%D8%A7%D9%84%D8%A8%D8%B1%D9%8A%D8%B7%D8%A7%D9%86%D9%8A-%D9%8A%D8%A8%D8%B1%D8%A6-%D8%A5%D9%8A%D8%AF-%D8%B4%D9%8A%D8%B1%D8%A7%D9%86-%D9%81%D9%89-%D8%B3%D8%B1%D9%82%D8%A9",
+                source: "Akhbarak.net",
+                image: "https://i.discogs.com/lVOppFOmQY2H0Ze9amRdcK0tR0c69DQae0j04KScMQM/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTIxODQ0/ODItMTYyNDYxNzk3/NS0xMjcxLmpwZWc.jpeg",
+                category: "general",
+                language: "ar",
+                country: "eg",
+                published_at: "2022-04-06T13:52:14+00:00"
+            },
+            {
+                author: "test10",
+                title: "القضاء البريطاني يبرئ إيد شيران sdfsdfsdf سرقة أغنية \" Shape of you\" - اليوم السابع",
+                description: "استطاع نجم البوب البريطاني إيد شيران الربح في معركته القضائية، حيث خلصته المحكمة العليا في لندن من السرقة الأدبية في أغنيته الشهيرة \" Shape of you\"،",
+                url: "http://thinakhbarak.local/articles/43868029-%D8%A7%D9%84%D9%82%D8%B6%D8%A7%D8%A1-%D8%A7%D9%84%D8%A8%D8%B1%D9%8A%D8%B7%D8%A7%D9%86%D9%8A-%D9%8A%D8%A8%D8%B1%D8%A6-%D8%A5%D9%8A%D8%AF-%D8%B4%D9%8A%D8%B1%D8%A7%D9%86-%D9%81%D9%89-%D8%B3%D8%B1%D9%82%D8%A9",
+                source: "Akhbarak.net",
+                image: "https://i.discogs.com/lVOppFOmQY2H0Ze9amRdcK0tR0c69DQae0j04KScMQM/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTIxODQ0/ODItMTYyNDYxNzk3/NS0xMjcxLmpwZWc.jpeg",
+                category: "general",
+                language: "ar",
+                country: "eg",
+                published_at: "2022-04-06T13:52:14+00:00"
+            },
+            {
+                author: "test11",
+                title: "القضاء البريطاني يبرئ إيد شيران sdfsdfsdf سرقة أغنية \" Shape of you\" - اليوم السابع",
+                description: "استطاع نجم البوب البريطاني إيد شيران الربح في معركته القضائية، حيث خلصته المحكمة العليا في لندن من السرقة الأدبية في أغنيته الشهيرة \" Shape of you\"،",
+                url: "http://thinakhbarak.local/articles/43868029-%D8%A7%D9%84%D9%82%D8%B6%D8%A7%D8%A1-%D8%A7%D9%84%D8%A8%D8%B1%D9%8A%D8%B7%D8%A7%D9%86%D9%8A-%D9%8A%D8%A8%D8%B1%D8%A6-%D8%A5%D9%8A%D8%AF-%D8%B4%D9%8A%D8%B1%D8%A7%D9%86-%D9%81%D9%89-%D8%B3%D8%B1%D9%82%D8%A9",
+                source: "Akhbarak.net",
+                image: "https://i.discogs.com/lVOppFOmQY2H0Ze9amRdcK0tR0c69DQae0j04KScMQM/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTIxODQ0/ODItMTYyNDYxNzk3/NS0xMjcxLmpwZWc.jpeg",
+                category: "general",
+                language: "ar",
+                country: "eg",
+                published_at: "2022-04-06T13:52:14+00:00"
+            },
+            {
+                author: "test12",
+                title: "القضاء البريطاني يبرئ إيد شيران sdfsdfsdf سرقة أغنية \" Shape of you\" - اليوم السابع",
+                description: "استطاع نجم البوب البريطاني إيد شيران الربح في معركته القضائية، حيث خلصته المحكمة العليا في لندن من السرقة الأدبية في أغنيته الشهيرة \" Shape of you\"،",
+                url: "http://thinakhbarak.local/articles/43868029-%D8%A7%D9%84%D9%82%D8%B6%D8%A7%D8%A1-%D8%A7%D9%84%D8%A8%D8%B1%D9%8A%D8%B7%D8%A7%D9%86%D9%8A-%D9%8A%D8%A8%D8%B1%D8%A6-%D8%A5%D9%8A%D8%AF-%D8%B4%D9%8A%D8%B1%D8%A7%D9%86-%D9%81%D9%89-%D8%B3%D8%B1%D9%82%D8%A9",
+                source: "Akhbarak.net",
+                image: "https://i.discogs.com/lVOppFOmQY2H0Ze9amRdcK0tR0c69DQae0j04KScMQM/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTIxODQ0/ODItMTYyNDYxNzk3/NS0xMjcxLmpwZWc.jpeg",
+                category: "general",
+                language: "ar",
+                country: "eg",
+                published_at: "2022-04-06T13:52:14+00:00"
+            },
+            {
+                author: "test13",
+                title: "القضاء البريطاني يبرئ إيد شيران sdfsdfsdf سرقة أغنية \" Shape of you\" - اليوم السابع",
+                description: "استطاع نجم البوب البريطاني إيد شيران الربح في معركته القضائية، حيث خلصته المحكمة العليا في لندن من السرقة الأدبية في أغنيته الشهيرة \" Shape of you\"،",
+                url: "http://thinakhbarak.local/articles/43868029-%D8%A7%D9%84%D9%82%D8%B6%D8%A7%D8%A1-%D8%A7%D9%84%D8%A8%D8%B1%D9%8A%D8%B7%D8%A7%D9%86%D9%8A-%D9%8A%D8%A8%D8%B1%D8%A6-%D8%A5%D9%8A%D8%AF-%D8%B4%D9%8A%D8%B1%D8%A7%D9%86-%D9%81%D9%89-%D8%B3%D8%B1%D9%82%D8%A9",
+                source: "Akhbarak.net",
+                image: "https://i.discogs.com/lVOppFOmQY2H0Ze9amRdcK0tR0c69DQae0j04KScMQM/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTIxODQ0/ODItMTYyNDYxNzk3/NS0xMjcxLmpwZWc.jpeg",
+                category: "general",
+                language: "ar",
+                country: "eg",
+                published_at: "2022-04-06T13:52:14+00:00"
+            }
+        ]
+    }
+]
+
+export const noticiasFijas =  [
+    {
+        data: [
+            {
+                author: "اليوم السابع",
+                title: "القضاء البريطاني يبرئ إيد شيران فى سرقة أغنية \" Shape of you\" - اليوم السابع",
+                description: "استطاع نجم البوب البريطاني إيد شيران الربح في معركته القضائية، حيث خلصته المحكمة العليا في لندن من السرقة الأدبية في أغنيته الشهيرة \" Shape of you\"،",
+                url: "http://thinakhbarak.local/articles/43868029-%D8%A7%D9%84%D9%82%D8%B6%D8%A7%D8%A1-%D8%A7%D9%84%D8%A8%D8%B1%D9%8A%D8%B7%D8%A7%D9%86%D9%8A-%D9%8A%D8%A8%D8%B1%D8%A6-%D8%A5%D9%8A%D8%AF-%D8%B4%D9%8A%D8%B1%D8%A7%D9%86-%D9%81%D9%89-%D8%B3%D8%B1%D9%82%D8%A9",
+                source: "Akhbarak.net",
+                image: "https://i.discogs.com/lVOppFOmQY2H0Ze9amRdcK0tR0c69DQae0j04KScMQM/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTIxODQ0/ODItMTYyNDYxNzk3/NS0xMjcxLmpwZWc.jpeg",
+                category: "general",
+                language: "ar",
+                country: "eg",
+                published_at: "2022-04-06T13:52:14+00:00"
+            },
+            {
+                author: "test",
+                title: "القضاء البريطاني يبرئ إيد شيران sdfsdfsdf سرقة أغنية \" Shape of you\" - اليوم السابع",
+                description: "استطاع نجم البوب البريطاني إيد شيران الربح في معركته القضائية، حيث خلصته المحكمة العليا في لندن من السرقة الأدبية في أغنيته الشهيرة \" Shape of you\"،",
+                url: "http://thinakhbarak.local/articles/43868029-%D8%A7%D9%84%D9%82%D8%B6%D8%A7%D8%A1-%D8%A7%D9%84%D8%A8%D8%B1%D9%8A%D8%B7%D8%A7%D9%86%D9%8A-%D9%8A%D8%A8%D8%B1%D8%A6-%D8%A5%D9%8A%D8%AF-%D8%B4%D9%8A%D8%B1%D8%A7%D9%86-%D9%81%D9%89-%D8%B3%D8%B1%D9%82%D8%A9",
+                source: "Akhbarak.net",
+                image: "https://i.discogs.com/lVOppFOmQY2H0Ze9amRdcK0tR0c69DQae0j04KScMQM/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTIxODQ0/ODItMTYyNDYxNzk3/NS0xMjcxLmpwZWc.jpeg",
+                category: "general",
+                language: "ar",
+                country: "eg",
+                published_at: "2022-04-06T13:52:14+00:00"
+            }
+        ]
+    }
+]

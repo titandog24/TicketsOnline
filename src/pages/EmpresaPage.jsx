@@ -9,10 +9,13 @@ import Header from '../components/Header/';
 import IndiceDeEmpresa from '../components/IndiceDeEmpresa/IndiceDeEmpresa';
 
 
-const EmpresaPage = () => {
+const EmpresaPage = ({User, UserLogin}) => {
     return (
         <>
-            <AppFrame requireFooter={false}></AppFrame>
+            <AppFrame 
+            isLogged={User} 
+            requireFooter={false} 
+            setUserLogin={UserLogin}></AppFrame>
             <Header></Header>
             <IndiceDeEmpresa />
             <CardMision />

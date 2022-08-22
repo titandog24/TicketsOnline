@@ -9,5 +9,5 @@ export default {
 
 export const componenteRender = () =>
 <Router>
-    <AppBars />
+    <AppBars EstaLogueado={false} />
 </Router> 

@@ -8,10 +8,10 @@ import CartaDeMultiplataforma from '../components/CartaDeMultiplataforma'
 
 
 
-const WelcomePage = () => {
+const WelcomePage = ({User, UserLogin}) => {
     return (
         <>
-            <AppFrame>
+            <AppFrame isLogged={User} setUserLogin={UserLogin}>
                     <CartaEncabezado />
                     <Patrocinadores />
                     <ContenidoCentral indice={1} />

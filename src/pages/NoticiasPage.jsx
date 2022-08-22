@@ -1,10 +1,12 @@
 import React from 'react';
 import AppFrame from '../components/AppFrame';
+import Noticia from '../components/Noticia/Noticia';
+import { noticias, noticiasFijas } from '../utils/Data';
 
-const NoticiasPage = () => {
+const NoticiasPage = ({User, UserLogin}) => {
     return (
-        <AppFrame>
-            <h1>HolaNoticia</h1>
+        <AppFrame isLogged={User} setUserLogin={UserLogin}>
+            <Noticia Noticias={noticias} NoticiasFijas={noticiasFijas} />
         </AppFrame>
     );
 }

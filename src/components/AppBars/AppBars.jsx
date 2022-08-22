@@ -15,13 +15,15 @@ import DiscountIcon from '@mui/icons-material/Discount'
 import { ThemeProvider, createTheme } from '@mui/material/styles'
 import Link from '@mui/material/Link'
 import { Link as RouterLink } from 'react-router-dom'
-
+import SettingsIcon from '@mui/icons-material/Settings';
 import { TitulosYTexto } from '../../utils/Data'
 
 const pages = ['Empresa', 'Contactenos', 'Noticias'];
+const pagesForUserLogged = ['Empresa', 'Contactenos', 'Noticias', 'Comprar']
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const pagesLogin = ['Login', 'Registro']
 const nombreEmpresa = TitulosYTexto().nombreEmpresa
-const AppBars = () => {
+const AppBars = ({ EstaLogueado, Logout }) => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -39,6 +41,9 @@ const AppBars = () => {
     const handleCloseUserMenu = () => {
         setAnchorElUser(null);
     };
+    const handleLogout = () => {
+        Logout(false)
+    }
     const darkTheme = createTheme({
         palette: {
             mode: 'dark',
@@ -47,6 +52,30 @@ const AppBars = () => {
             },
         },
     })
+
+    const handlePagesAppBar = (pages) => {
+        return pages.map((page) => (
+            <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">
+                    <Link to={`/${page}`} component={RouterLink} underline="hover" color='inherit'>
+                        {page}
+                    </Link>
+                </Typography>
+            </MenuItem>
+        ))
+    }
+    const handlePagesMobile = (pages) => {
+        return pages.map((page) => (
+            <Button
+                key={page}
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: 'white', display: 'block' }}>
+                <Link to={`/${page}`} component={RouterLink} underline="hover" color='inherit'>
+                    {page}
+                </Link>
+            </Button>
+        ))
+    }
 
     const MobileAppBar = () => {
         return (
@@ -96,16 +125,11 @@ const AppBars = () => {
                         sx={{
                             display: { xs: 'block', md: 'none' },
                         }}>
-                        {pages.map((page) => (
-                            <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                <Typography textAlign="center">
-                                    <Link to={`/${page}`} component={RouterLink} underline="hover" color='inherit'>
-                                        {page}
-                                    </Link>
-                                </Typography>
-
-                            </MenuItem>
-                        ))}
+                        {
+                            EstaLogueado
+                                ? (handlePagesAppBar(pagesForUserLogged))
+                                : (handlePagesAppBar(pages))
+                        }
                     </Menu>
                 </Box>
             </>
@@ -134,16 +158,11 @@ const AppBars = () => {
                     </Link>
                 </Typography>
                 <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                    {pages.map((page) => (
-                        <Button
-                            key={page}
-                            onClick={handleCloseNavMenu}
-                            sx={{ my: 2, color: 'white', display: 'block' }}>
-                            <Link to={`/${page}`} component={RouterLink} underline="hover" color='inherit'>
-                                {page}
-                            </Link>
-                        </Button>
-                    ))}
+                    {
+                        EstaLogueado
+                            ? (handlePagesMobile(pagesForUserLogged))
+                            : (handlePagesMobile(pages))
+                    }
                 </Box>
             </>
         )
@@ -174,8 +193,62 @@ const AppBars = () => {
                         open={Boolean(anchorElUser)}
                         onClose={handleCloseUserMenu}>
                         {settings.map((setting) => (
+                            setting !== 'Logout'
+                                ? (<MenuItem key={setting} onClick={handleCloseUserMenu}>
+                                    <Typography textAlign="center">{setting}</Typography>
+                                </MenuItem>)
+                                : (<MenuItem key={setting} onClick={handleLogout}>
+                                    <Typography textAlign="center">{setting}</Typography>
+                                </MenuItem>)
+                        ))}
+                    </Menu>
+                </Box>
+            </>
+        )
+    }
+
+    const MenuUserNoLogin = () => {
+        return (
+            <>
+                <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
+                    {pagesLogin.map((page) => (
+                        <Button
+                            key={page}
+                            onClick={handleCloseNavMenu}
+                            sx={{ my: 2, color: 'white', display: 'block' }}>
+                            <Link to={`/${page}`} component={RouterLink} underline="hover" color='inherit'>
+                                {page}
+                            </Link>
+                        </Button>
+                    ))}
+                </Box>
+
+                <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' } }}>
+                    <Tooltip title="Open settings">
+                        <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                            <SettingsIcon />
+                        </IconButton>
+                    </Tooltip>
+                    <Menu
+                        sx={{ mt: '45px' }}
+                        id="menu-appbar"
+                        anchorEl={anchorElUser}
+                        anchorOrigin={{
+                            vertical: 'top',
+                            horizontal: 'right',
+                        }}
+                        keepMounted
+                        transformOrigin={{
+                            vertical: 'top',
+                            horizontal: 'right',
+                        }}
+                        open={Boolean(anchorElUser)}
+                        onClose={handleCloseUserMenu}>
+                        {pagesLogin.map((setting) => (
                             <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                                <Typography textAlign="center">{setting}</Typography>
+                                <Link to={`/${setting}`} component={RouterLink} underline="hover" color='inherit'>
+                                    <Typography textAlign="center">{setting}</Typography>
+                                </Link>
                             </MenuItem>
                         ))}
                     </Menu>
@@ -191,11 +264,19 @@ const AppBars = () => {
                     <Toolbar disableGutters>
                         {MobileAppBar()}
                         {DeskAppBar()}
-                        {SettingMenu()}
+                        {
+                            EstaLogueado
+                                ? SettingMenu()
+                                : MenuUserNoLogin()
+                        }
                     </Toolbar>
                 </Container>
             </AppBar>
         </ThemeProvider>
     );
 };
+
+AppBars.defaultProps = {
+    EstaLogueado: false
+}
 export default AppBars;

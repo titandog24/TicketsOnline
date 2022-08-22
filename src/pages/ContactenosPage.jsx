@@ -5,9 +5,9 @@ import Contact from '../components/Contact';
 
 
 
-const ContactenosPage = () => {
+const ContactenosPage = ({User, UserLogin}) => {
     return (
-        <AppFrame>
+        <AppFrame isLogged={User} setUserLogin={UserLogin}>
             <Contact />
             <CartaDeMultiplataforma />
         </AppFrame>

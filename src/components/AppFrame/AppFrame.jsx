@@ -2,10 +2,10 @@ import React from 'react'
 import Grid from '@mui/material/Grid'
 import AppBars from '../AppBars';
 import Footer from '../Footer'
-const AppFrame = ({requireFooter, children }) => {
+const AppFrame = ({isLogged, setUserLogin, requireFooter, children }) => {
     return (
         <>
-            <AppBars />
+            <AppBars EstaLogueado={isLogged} Logout={setUserLogin} />
             <Grid container
                     justifyContent={'center'}
                     direction={'row'}>
@@ -27,7 +27,8 @@ const AppFrame = ({requireFooter, children }) => {
 }
 
 AppFrame.defaultProps = {
-    requireFooter: true
+    requireFooter: true,
+    isLogged: false
  }
 
 export default AppFrame;

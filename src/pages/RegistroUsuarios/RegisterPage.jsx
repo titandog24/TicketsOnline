@@ -1,5 +1,6 @@
 import React from 'react';
 import Grid from '@mui/material/Grid'
+import { Redirect } from 'react-router-dom';
 import FormularioRegistro from '../../components/FormularioRegistro';
 import { ListaDeImagenes } from '../../utils/Data';
 import './RegisterPage.css'
@@ -7,7 +8,14 @@ import './RegisterPage.css'
 
 
 
-const RegisterPage = () => {
+const RegisterPage = ({User}) => {
+    const location = {
+        pathname: '/'
+      }
+    if (User) {
+        return <Redirect to={location}/>
+    }
+
     const fondo = ListaDeImagenes().fondoRegistro
     return (
         <>
