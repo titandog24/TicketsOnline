@@ -456,3 +456,23 @@ export const noticiasFijas =  [
         ]
     }
 ]
+
+export const DatosEventos = () => {
+    return [
+        {
+            recibo: '09876',
+            evento: 'Monster Jump',
+            cantidadEntradas: 5
+        },
+        {
+            recibo: '12345',
+            evento: 'Concierto de Cultura Profetica',
+            cantidadEntradas: 2
+        },
+        {
+            recibo: '34567',
+            evento: 'Partido Costa Rica vs México',
+            cantidadEntradas: 2
+        },
+    ]
+}
