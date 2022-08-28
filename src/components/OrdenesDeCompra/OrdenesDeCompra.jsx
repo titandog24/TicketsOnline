@@ -13,7 +13,6 @@ import {
     ListItemText
 } from '@mui/material'
 import VisibilityIcon from '@mui/icons-material/Visibility';
-import { DatosEventos } from '../../utils/Data'
 
 
 
@@ -56,7 +55,7 @@ const CreaOrdenDeCompra = ({ Evento }) => {
     )
 }
 
-const OrdenesDeCompra = () => {
+const OrdenesDeCompra = ({ActivaFormularioCompra}) => {
 
     const [data, setData] = useState(null)
 
@@ -82,7 +81,7 @@ const OrdenesDeCompra = () => {
                         </Typography>
                     </Grid>
                     <Grid item xs={12} sx={{ mb: 3 }} textAlign={'right'}>
-                        <Button variant="contained" color="success">
+                        <Button variant="contained" color="success" onClick={() => ActivaFormularioCompra(true)}>
                             Nueva compra
                         </Button>
                     </Grid>

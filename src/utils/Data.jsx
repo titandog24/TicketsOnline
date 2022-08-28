@@ -476,3 +476,23 @@ export const DatosEventos = () => {
         },
     ]
 }
+
+
+export const currencies  = () => [
+    {
+      value: 'c2022-1',
+      label: 'Concierto de Bad Bunny',
+    },
+    {
+      value: 'c2022-2',
+      label: 'Concierto con BTS',
+    },
+    {
+      value: 'c2022-3',
+      label: 'Concierto con Guns And Roses',
+    },
+    {
+      value: 'c2022-4',
+      label: 'Concierto con Cristian Nodal',
+    },
+  ];

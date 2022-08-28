@@ -5,5 +5,7 @@ export default {
     title: 'OrdenesDeCompra',
     component: OrdenesDeCompra
 }
+const handleClick = () => {
 
-export const componenteRender = () => <OrdenesDeCompra />
+}
+export const componenteRender = () => <OrdenesDeCompra ActivaFormularioCompra={handleClick}/>
