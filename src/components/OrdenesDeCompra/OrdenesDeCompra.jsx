@@ -15,11 +15,6 @@ import {
 import VisibilityIcon from '@mui/icons-material/Visibility';
 
 
-
-
-
-
-
 const CreaOrdenDeCompra = ({ Evento }) => {
 
     return (
@@ -67,7 +62,7 @@ const OrdenesDeCompra = ({ActivaFormularioCompra}) => {
             .catch((err) => {
                 console.log(err);
             })
-    }, [setData])
+    }, [setData, data])
 
     return (
         <Grid

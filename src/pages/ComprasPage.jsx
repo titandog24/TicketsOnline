@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Axios from 'axios'
 import { Grid } from '@mui/material';
 import AppFrame from '../components/AppFrame';
 import OrdenesDeCompra from '../components/OrdenesDeCompra/'
@@ -13,20 +14,28 @@ const ComprasPage = ({ User, UserLogin }) => {
 
     const [ActivarCompra, SetActivarCompra] = useState(false)
 
-
-    // const location = {
-    //     pathname: '/'
-    //   }
-    // if (!User) {
-    //     return <Redirect to={location}/>
-    // }
-
     const ActivaFormularioCompra = (value) => {
         SetActivarCompra(value)
     }
 
     const RealizarCompra = (res) => {
-        console.log(res);
+        
+        const datos = {
+            evento: res.currency,
+            cantidad: res.entradas
+        }
+
+        Axios.post('http://localhost:8090/api/user/Guardar',datos)
+        .then((res) => {
+            if (res.data.msg) {
+                SetActivarCompra(false)
+            }
+            
+        })
+        .catch((err) => {
+            console.log(err);
+        })
+
         return null
     }
 

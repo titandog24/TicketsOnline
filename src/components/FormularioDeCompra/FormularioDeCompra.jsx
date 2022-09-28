@@ -13,7 +13,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 const FormularioDeCompra = ({RealizarCompra, ActivaFormularioCompra}) => {
 
-    const [currency, setCurrency] = useState('EUR')
+    const [currency, setCurrency] = useState('c2022-1')
     const [entradas, setEntradas] = useState(1)
 
     const handleClick = () => {
