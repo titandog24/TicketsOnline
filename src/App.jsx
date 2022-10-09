@@ -54,7 +54,7 @@ const App = () => {
           <EmpresaPage User={userLogin} UserLogin={logout}/>
         </Route>
         <Route path={"/Registro"}>
-          <RegisterPage User={userLogin}/>
+          <RegisterPage User={userLogin} UserLogin={setUserLogin}/>
         </Route>
         <Route path={"/Login"}>
           <Login User={userLogin} UserLogin={setUserLogin} />

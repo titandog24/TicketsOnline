@@ -10,7 +10,23 @@ import Link from '@mui/material/Link'
 import { Link as RouterLink } from 'react-router-dom'
 import { ListaDeImagenes } from '../../utils/Data';
 
-const FormularioRegistro = () => {
+const CreateNewUser = (e, RegisterNewUser) => {
+
+    e.preventDefault()
+
+    let user = {
+        nombre: document.getElementById('nombre').value,
+        apellido: document.getElementById('apellidos').value,
+        dni: document.getElementById('dni').value,
+        email: document.getElementById('correo').value,
+        password: document.getElementById('password').value
+    }
+
+    RegisterNewUser(user) 
+}
+
+const FormularioRegistro = ({RegisterNewUser}) => {
+
     return (
         <Grid item xs={12}>
             <Grid container item direction={'row'} sx={{ mb: 5, height: '10%' }}>
@@ -99,7 +115,11 @@ const FormularioRegistro = () => {
                     </Grid>
                     <Grid container item xs={12} sx={{ mt: 2 }}>
                         <Grid item xs={12}>
-                            <Button variant="contained" color='secondary' style={{ width: '100%' }}>
+                            <Button 
+                            variant="contained" 
+                            color='secondary' 
+                            style={{ width: '100%' }}
+                            onClick={(e) => CreateNewUser(e, RegisterNewUser)}>
                                 Crear cuenta
                             </Button>
                         </Grid>
